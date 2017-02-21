@@ -148,12 +148,19 @@
       <version>1.6.1</version>
     </dependency>
 
+    <!--hibernate-->
     <dependency>
       <groupId>org.hibernate</groupId>
       <artifactId>hibernate-validator</artifactId>
       <version>4.2.0.Final</version>
     </dependency>
 
+    <!--diffbot-->
+    <dependency>
+      <groupId>com.syncthemall</groupId>
+      <artifactId>diffbot-java-sdk</artifactId>
+      <version>1.2.2</version>
+    </dependency>
 
   </dependencies>
 
