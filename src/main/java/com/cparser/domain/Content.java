@@ -11,7 +11,7 @@ import com.syncthemall.diffbot.model.PageType;
 public abstract class Content {
 
     public Content(){}
-    public abstract String getUrl();
-    public abstract PageType getPageType();
+    public abstract String getPageUrl();
+    public abstract ContentType getType();
 
 }
