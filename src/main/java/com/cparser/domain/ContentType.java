@@ -12,7 +12,7 @@ public enum  ContentType {
 
     ARTICLE("article"),
     IMAGE("image"),
-    VIDEO("image");
+    VIDEO("video");
 
     private String key;
     private ContentType(String key){
