@@ -31,19 +31,26 @@ public class tset4 {
         for (Element element : elements) {
             element.empty();
         }
-//        //获取网络语言
-//        System.out.println("language: "+document.getElementsByTag("html").attr("lang"));
-//        //获取tile
-//        System.out.println("title: "+Xsoup.compile("//h1[@class='story-body__h1']/text()").evaluate(document).get());
-//        //获取text
-//        List<String> elements1 = Xsoup.compile("//div[@class='story-body__inner']//p/text()").evaluate(document).list();
-//        System.out.print("content: ");
-//        for(String str:elements1)
-//            System.out.println(str);
-//        //获取图片url
-//        System.out.println("img_url: "+Xsoup.compile("//span[@class='image-and-copyright-container']/div/@data-src").evaluate(document).get());
-//        //获取图片title
-//        System.out.println("img_tile: "+Xsoup.compile("//span[@class='media-caption__text']//text()").evaluate(document).get());
-        System.out.println(document);
+        //获取网络语言
+        System.out.println("language: "+document.getElementsByTag("html").attr("lang"));
+        //获取tile
+        System.out.println("title: "+Xsoup.compile("//h1[@class='story-body__h1']/text()").evaluate(document).get());
+        //获取text
+        List<String> elements1 = Xsoup.compile("//div[@class='story-body__inner']//p/text()").evaluate(document).list();
+        System.out.print("content: ");
+        for(String str:elements1)
+            System.out.println(str);
+        //获取图片url
+        List<String> var1 = Xsoup.compile("//span[@class='image-and-copyright-container']/div/@data-src").evaluate(document).list();
+        for(String str:var1){
+            System.out.println("img_url: "+var1);
+        }
+        Xsoup.compile("").evaluate(document).getElements();
+        //获取图片title
+        List<String> var2 = Xsoup.compile("//span[@class='media-caption__text']//text()").evaluate(document).list();
+        for(String str:var2){
+            System.out.println("img_title: "+str);
+        }
+//        System.out.println(document);
     }
 }
