@@ -24,9 +24,9 @@ public class TestGetContent {
         Article article = new Article();
         article.set("url","www.baidu.com");
         article.set("author","testwww.baidu.com");
+        article.set("test1","testwww.baidu.com");
         article.set("type",PageType.valueOf("ARTICLE"));
-
-        System.out.println( article.getType());
+        System.out.println( article.get("test1"));
 //        for(PageType type:PageType.values() ){
 //            System.out.println(type.getKey());
 //        }
